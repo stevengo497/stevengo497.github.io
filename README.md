@@ -6,3 +6,4 @@ User Stories - User will first enter the site and see an introductory page. This
 
 Approach taken - The majority of the functionality will be done on Javascript/jQuery. Although, the majority of this project could've been done on CSS animation or other software, I wanted to stick with Javascript/jQuery in order to gain more knowledge of those programs. CSS animation will mainly be used for styling purposes. HTML, CSS, Javascript/jQuery and Bootstrap will be the only software I'll be using for this project. 
 
+----> LINK TO PLAY THE GAME!   https://stevengo497.github.io/ .   
