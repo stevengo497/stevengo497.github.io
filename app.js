@@ -4,7 +4,7 @@ $(function() {
 
 	$('#start').one("click", function(){
 			
-			let i = 1;
+			let i = 100;
 			let timer = setInterval(function(){
 				i--;
 				$('#box').html(i);
