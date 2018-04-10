@@ -19,6 +19,10 @@ $(function() {
 	    	location.reload();
 			});
 
+			$('#reset').click(function() {
+				location.reload();
+			});
+
 	
 		/* TO DO LIST
 			-reset button?
