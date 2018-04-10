@@ -37,11 +37,32 @@ span {
 	color: #E5422E;
 }
 
-#dragonRight {
+/*#dragonRight {
 	position: absolute;
-	margin-left: 30%
+	margin-left: 1350px;
+	animation-name: flyToLeft;
+	animation-duration: 6s;
+	animation-fill-mode: forwards;
+	animation-delay: 8s;
+}*/
+
+#dragonLeft {
+	margin-left: -450px;
+	animation-name: flyToRight;
+	animation-duration: 6s;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
 }
 
+@keyframes flyToRight {
+	from{ transform: translateX(-450px); }
+	to{ transform: translateX(1800px); }
+}
+
+@keyframes flyToLeft {
+	from{ transform: translateX(1800px); }
+	to{ transform: translateX(-700px); }
+}
 
 /*----- game html ----------*/
 
