@@ -1,76 +1,65 @@
 console.log('Up and running!');
 
-$(function() {
+$(function() { // jquery method for document.ready
 
-	$('#start').one("click", function(){
-			
-			let i = 100;
-			let timer = setInterval(function(){
-				i--;
-				$('#box').html(i);
-					if (i < 0 ) {
-						clearInterval(timer);
-						$('.loseAlert').css("display", "block");
+	$('#start').one("click", function(){ // this sets timer to allow only 1 click - also this is wrapped on the entire page, NOTHING happens (JS) until start button is clicked
+			// which means you cannot start playing or flipping cards until button is clicked.
+			let i = 100; // seconds starts at 100
+			let timer = setInterval(function(){ //set interval for timer (function)
+				i--; //1 sec removed every interval
+				$('#box').html(i); //displays on html portion of button
+					if (i < 0 ) { // if timer shows less than 0 seconds
+						clearInterval(timer); // stops the timer
+						$('.loseAlert').css("display", "block"); // lose alert pops up b/c we changed display from NONE to BLOCK
 						}
-			}, 1000);
+			}, 1000); // waits one second to pop up
 
-			$('#losePlayAgain').click(function() {
-	    	$('.loseAlert').css("display", "none");
-	    	location.reload();
+			$('#losePlayAgain').click(function() { // if play again button on lose alert is clicked, then...
+	    	$('.loseAlert').css("display", "none"); // display changes to none so that alert disappears
+	    	location.reload(); // and the page is reloaded/refresh essentially "reset" timer and cards
 			});
 
-			$('#reset').click(function() {
+			$('#reset').click(function() { // if reset button at bottom of page is pressed then page refreshes or "Resets"
 				location.reload();
 			});
 
-	
-		/* TO DO LIST
-			-reset button?
-			Create your own alert box for winner and loser
-			display as none
-			when function is called upon, change css display to "block" so it will reappear in the screen
-			look at possible overlay on full screen w/ alert
-			add button to exit */
-
-
-		
 // Jackie Chan //
-		$('#column5Card1').on("click", function() {	
-				if ($('.twoCards').length < 2) {
-					$('#row1Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards");
-				}	
+		$('#column5Card1').on("click", function() {	 //if yin yang in this position is clicked
+				if ($('.twoCards').length < 2) { // will check to see if twoCards class is less than 2
+					$('#row1Card5').css({'display' : 'block'}).fadeIn("fast").addClass("clicked").addClass("twoCards"); 
+				}	// if so, then change display to block to show Asian pic, fade in fast, add a class of clicked and twoCards
 			let checkChan1 = function () {
-				if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) {
-						$('#row1Card5').delay(1000).addClass("matched").fadeOut(1500);
+				if ($('#row3Card2').is(':visible') && $('#row1Card5').is(':visible')) { // if these cards are visible (display changed to 'block' upon click)
+						$('#row1Card5').delay(1000).addClass("matched").fadeOut(1500); // next 4 lines remove cards w/ effects and add class matched (CSS) and also remove yin yang class
 						$('#column5Card1').delay(1000).fadeOut(100).removeClass('yinYangRemove');
 						$('#row3Card2').delay(1000).addClass("matched").fadeOut(1500);
 						$('#column2Card3').delay(1000).fadeOut(100).removeClass('yinYangRemove');
-						$('#gong')[0].play();
-						$('#chanList').css({'transform' : 'scale(1.3)', 'color' : 'black'}).fadeOut(4000);
+						$('#gong')[0].play(); // play gong sound, actual sound located [0] -
+						$('#chanList').css({'transform' : 'scale(1.3)', 'color' : 'black'}).fadeOut(4000); // remove name from list, transform to 1.3% the size and fadeout
 				}
 			}
-				if ($('.clicked').length === 2) {
+				if ($('.clicked').length === 2) { // if clicked class is equal to 2, then check Function
 					checkChan1();
 				}
 					
-				if ($('.clicked').length === 2) {
+				if ($('.clicked').length === 2) { // if clicked class is equal to 2, then remove both cards w/ clicked class and remove the class itself
 							$('.clicked').delay(2000).fadeOut(100).removeClass("clicked");	
-							setTimeout(function() {
-								$('.twoCards').removeClass("twoCards");
-								}, 2100);						
+							setTimeout(function() { // however set a timer so it doesn't remove right away
+								$('.twoCards').removeClass("twoCards"); //  need a few seconds to show more than twoCards class that way, only 2 cards can be shown at once per line 28
+								}, 2100);	//timer to remove at 2.1 secs				
 				}
 
-				if ($('.yinYangRemove').length === 0) {
-					setTimeout(function() {
-					$('.winAlert').css("display", "block");
+				if ($('.yinYangRemove').length === 0) { //remember line 34 and 36, if matched the yinYangRemove class is removed and if it equals 0
+					setTimeout(function() { // all cards are no longer on the game board, which means...
+					$('.winAlert').css("display", "block"); //WINNER alert pops up, the display was set to none, but now it will show as blocked
 					clearInterval(timer);
-					}, 2100);
-					$('#playAgain').click(function() {
-    				$('.winAlert').css("display", "none");
-    			location.reload();
+					}, 2100); // give is a few seconds so the final cards can complete their animation and disappear instead of alert popping up instantly.
+					$('#playAgain').click(function() { // alert is popped up and at the bottom theres a play again button
+    				$('.winAlert').css("display", "none"); // if clicked the Win alert disappears b/c we put display back to none
+    			location.reload(); // and page refreshes with 100 secs on timer and all cards/Yin Yangs back on the game board
     			})
 				}	
-		});
+		}); // REPEAT FOR ALL 24 CARDS!!!!!!
 
 		$('#column2Card3').on("click", function() {	 
 				if ($('.twoCards').length < 2) {	

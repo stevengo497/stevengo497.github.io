@@ -1,109 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Atypical Asians</title>
-	<!-- BootStrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<!-- CSS file -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Ceviche+One|Kaushan+Script|Merienda+One|Shojumaru" rel="stylesheet">
-</head>
+	<head>
+		<title>Atypical Asians</title>
+		<!-- BootStrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- CSS file -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Ceviche+One|Kaushan+Script|Merienda+One|Shojumaru" rel="stylesheet">
+	</head>
 
-<body class="backgroundImage">
-	<h1>Atypical Asians</h1>
-	<div class="buttons">
-		<button type="button" class="btn btn-warning" id="start">CLICK HERE TO START</button>
-		<button type="button" class="btn btn-warning" id="box">100</button>
-	</div>
-<div id="list">
-	<ul>
-		<li id="leeList">Bruce Lee</li>
-		<li id="kimList">Daniel Dae Kim</li>
-		<li id="wuList">Daniel Wu</li>
-		<li id="yenList">Donnie Yen</li>
-		<li id="chanList">Jackie Chan</li>
-		<li id="liList">Jet Li</li>
-		<li id="choList">John Cho</li>
-		<li id="jeongList">Ken Jeong</li>
-		<li id="ngoList">Steve Ngo</li>
-		<li id="yeunList">Steven Yeun</li>
-		<li id="kangList">Sung Kang</li>
-		<li id="jaaList">Tony Jaa</li>
-	</ul>
-</div>	
+	<body class="backgroundImage">
+		<h1>Atypical Asians</h1>
+			<div class="buttons">
+				<button type="button" class="btn btn-warning" id="start">CLICK HERE TO START</button>
+				<button type="button" class="btn btn-warning" id="box">100</button>
+			</div>
+		<div id="list">
+			<ul>
+				<li id="leeList">Bruce Lee</li>
+				<li id="kimList">Daniel Dae Kim</li>
+				<li id="wuList">Daniel Wu</li>
+				<li id="yenList">Donnie Yen</li>
+				<li id="chanList">Jackie Chan</li>
+				<li id="liList">Jet Li</li>
+				<li id="choList">John Cho</li>
+				<li id="jeongList">Ken Jeong</li>
+				<li id="ngoList">Steve Ngo</li>
+				<li id="yeunList">Steven Yeun</li>
+				<li id="kangList">Sung Kang</li>
+				<li id="jaaList">Tony Jaa</li>
+			</ul>
+		</div>	
 
-<div class="winAlert" display="none"><span>Winner!</span> Someone likes Asian people! Looking for an Asian friend? Contact <span>Steve Ngo</span> by visiting his website <a href="http://www.ngolimitdesigns.com" target="_blank"><span>www.NgoLimitDesigns.com</span></a> 
-<button type="button" class="btn btn-warning" id="playAgain">Play Again?</button></div>
-<div class="loseAlert" display="none"><span>You lose!</span> Seriously, do you even have any Asian friends? If you need one, don't hesitate to contact <span>Steve Ngo</span> by visiting his website <a href="http://www.ngolimitdesigns.com" target="_blank"><span>www.NgoLimitDesigns.com</span></a>
-<button type="button" class="btn btn-warning" id="losePlayAgain">Play Again?</button></div>
-<div class="container">
-	<img class="yinYang yinYangRemove" id="column1Card1" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column1Card2" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column1Card3" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column1Card4" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column2Card1" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column2Card2" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column2Card3" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column2Card4" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column3Card1" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column3Card2" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column3Card3" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column3Card4" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column4Card1" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column4Card2" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column4Card3" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column4Card4" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column5Card1" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column5Card2" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column5Card3" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column5Card4" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column6Card1" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column6Card2" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column6Card3" src="images/Yin-yang.png">
-	<img class="yinYang yinYangRemove" id="column6Card4" src="images/Yin-yang.png">
-	<!-- Asian Pics -->
-	<img class="asianPic" id="row1Card1" src="images/Daniel-Wu.jpg">
-	<img class="asianPic" id="row1Card2" src="images/Donnie-Yen.jpeg">
-	<img class="asianPic" id="row1Card3" src="images/Tony-Jaa.jpg">
-	<img class="asianPic" id="row1Card4" src="images/Jet-Li.jpg">
-	<img class="asianPic" id="row1Card5" src="images/Jackie-Chan.jpg">
-	<img class="asianPic" id="row1Card6" src="images/Jet-Li.jpg">
-	<img class="asianPic" id="row2Card1" src="images/Steven-Yeun.jpg">
-	<img class="asianPic" id="row2Card2" src="images/Steve-Ngo.jpg">
-	<img class="asianPic" id="row2Card3" src="images/Bruce-Lee.jpg">
-	<img class="asianPic" id="row2Card4" src="images/Sung-Kang.png">
-	<img class="asianPic" id="row2Card5" src="images/John-Cho.jpg">
-	<img class="asianPic" id="row2Card6" src="images/Tony-Jaa.jpg">
-	<img class="asianPic" id="row3Card1" src="images/Daniel-Dae-Kim.jpeg">
-	<img class="asianPic" id="row3Card2" src="images/Jackie-Chan.jpg">
-	<img class="asianPic" id="row3Card3" src="images/Steven-Yeun.jpg">
-	<img class="asianPic" id="row3Card4" src="images/Donnie-Yen.jpeg">
-	<img class="asianPic" id="row3Card5" src="images/Bruce-Lee.jpg">
-	<img class="asianPic" id="row3Card6" src="images/Sung-Kang.png">
-	<img class="asianPic" id="row4Card1" src="images/Daniel-Wu.jpg">
-	<img class="asianPic" id="row4Card2" src="images/Ken-Jeong.jpg">
-	<img class="asianPic" id="row4Card3" src="images/Daniel-Dae-Kim.jpeg">
-	<img class="asianPic" id="row4Card4" src="images/Steve-Ngo.jpg">
-	<img class="asianPic" id="row4Card5" src="images/John-Cho.jpg">
-	<img class="asianPic" id="row4Card6" src="images/Ken-Jeong.jpg">
-
-
-	<img class="table-background" src="images/table-background.jpg">
-
-	</div>
-
-	<br>
-<audio id="greenTea" autoplay loop>
-	<source src="media/Green Tea.mp3" type="audio/mp3">
-</audio>
-<audio id="gong">
-	<source src="media/gong.mp3" type="audio/mp3">
-</audio>
-<button type="button" class="btn btn-warning buttons" id="reset">RESET</button>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- JS file -->
-<script type="text/javascript" src="app.js"></script>
-</body>
+			<div class="winAlert" display="none"><span>Winner!</span> Someone likes Asian people! Looking for an Asian friend? Contact <span>Steve Ngo</span> by visiting his website <a href="http://www.ngolimitdesigns.com" target="_blank"><span>www.NgoLimitDesigns.com</span></a> 
+				<button type="button" class="btn btn-warning" id="playAgain">Play Again?</button></div>
+			<div class="loseAlert" display="none"><span>You lose!</span> Seriously, do you even have any Asian friends? If you need one, don't hesitate to contact <span>Steve Ngo</span> by visiting his website <a href="http://www.ngolimitdesigns.com" target="_blank"><span>www.NgoLimitDesigns.com</span></a>
+				<button type="button" class="btn btn-warning" id="losePlayAgain">Play Again?</button>
+		</div>
+		<div class="container">
+			<img class="yinYang yinYangRemove" id="column1Card1" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column1Card2" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column1Card3" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column1Card4" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column2Card1" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column2Card2" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column2Card3" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column2Card4" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column3Card1" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column3Card2" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column3Card3" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column3Card4" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column4Card1" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column4Card2" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column4Card3" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column4Card4" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column5Card1" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column5Card2" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column5Card3" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column5Card4" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column6Card1" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column6Card2" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column6Card3" src="images/Yin-yang.png">
+			<img class="yinYang yinYangRemove" id="column6Card4" src="images/Yin-yang.png">
+<!-- Asian Pics -->
+			<img class="asianPic" id="row1Card1" src="images/Daniel-Wu.jpg">
+			<img class="asianPic" id="row1Card2" src="images/Donnie-Yen.jpeg">
+			<img class="asianPic" id="row1Card3" src="images/Tony-Jaa.jpg">
+			<img class="asianPic" id="row1Card4" src="images/Jet-Li.jpg">
+			<img class="asianPic" id="row1Card5" src="images/Jackie-Chan.jpg">
+			<img class="asianPic" id="row1Card6" src="images/Jet-Li.jpg">
+			<img class="asianPic" id="row2Card1" src="images/Steven-Yeun.jpg">
+			<img class="asianPic" id="row2Card2" src="images/Steve-Ngo.jpg">
+			<img class="asianPic" id="row2Card3" src="images/Bruce-Lee.jpg">
+			<img class="asianPic" id="row2Card4" src="images/Sung-Kang.png">
+			<img class="asianPic" id="row2Card5" src="images/John-Cho.jpg">
+			<img class="asianPic" id="row2Card6" src="images/Tony-Jaa.jpg">
+			<img class="asianPic" id="row3Card1" src="images/Daniel-Dae-Kim.jpeg">
+			<img class="asianPic" id="row3Card2" src="images/Jackie-Chan.jpg">
+			<img class="asianPic" id="row3Card3" src="images/Steven-Yeun.jpg">
+			<img class="asianPic" id="row3Card4" src="images/Donnie-Yen.jpeg">
+			<img class="asianPic" id="row3Card5" src="images/Bruce-Lee.jpg">
+			<img class="asianPic" id="row3Card6" src="images/Sung-Kang.png">
+			<img class="asianPic" id="row4Card1" src="images/Daniel-Wu.jpg">
+			<img class="asianPic" id="row4Card2" src="images/Ken-Jeong.jpg">
+			<img class="asianPic" id="row4Card3" src="images/Daniel-Dae-Kim.jpeg">
+			<img class="asianPic" id="row4Card4" src="images/Steve-Ngo.jpg">
+			<img class="asianPic" id="row4Card5" src="images/John-Cho.jpg">
+			<img class="asianPic" id="row4Card6" src="images/Ken-Jeong.jpg">
+<!-- Game board background -->
+			<img class="table-background" src="images/table-background.jpg">
+		</div>
+	
+		<audio id="greenTea" autoplay loop>
+			<source src="media/Green Tea.mp3" type="audio/mp3">
+		</audio>
+		<audio id="gong">
+			<source src="media/gong.mp3" type="audio/mp3">
+		</audio>
+		<button type="button" class="btn btn-warning buttons" id="reset">RESET</button>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- JS file -->
+		<script type="text/javascript" src="app.js"></script>
+	</body>
 </html>
