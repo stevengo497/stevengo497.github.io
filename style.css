@@ -1,11 +1,12 @@
 
 
 #intro {
-	border: 7px solid #FFF35B;
+	border: 7px solid #F2C329;
 	display: block;
 	margin-top: 7%;
 	margin-left: 10%;
 	margin-right: 10%;
+	background-color: #C93D22
 }
 
 p {
@@ -15,10 +16,10 @@ p {
 }
 
 span {
-	color: #FFF35B;
+	color: #F2C329;
 }
 
-#play {
+.play {
 	position: absolute;
 	text-align: center;
 	display: block;
@@ -33,8 +34,8 @@ span {
 	color: black;
 }
 
-#play:hover {
-	color: #E5422E;
+.play:hover {
+	color: #C93D22;
 }
 
 /*#dragonRight {
@@ -65,9 +66,33 @@ span {
 }
 
 /*----- game html ----------*/
+.winAlert {
+	display: none;
+	position: absolute;
+	border: 7px solid #F2C329;
+	background-color: #C93D22;
+	font-family: 'Shojumaru', cursive;
+	text-align: center;
+	padding: 20px;
+	z-index: 100;
+	margin-left: 30%;
+	margin-right: 30%;
+	font-size: 36px;
+	margin-top: 3%;
+}
 
-#xmark {
-	color: black;
+.loseAlert {
+	display: none;
+	position: absolute;
+	border: 7px solid #F2C329;
+	background-color: #C93D22;
+	font-family: 'Shojumaru', cursive;
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	z-index: 100;
+	font-size: 36px;
+	margin-top: 3%;
 }
 
 li {
@@ -76,6 +101,11 @@ li {
 	color: #FFF35B;
 	font-size: 20px;
 	padding: 2px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFF35B;
 }
 
 #list {
@@ -88,10 +118,6 @@ li {
 	margin-left: auto;
 	margin-right: auto;
 }
-#gong {
-
-}
-
 
 .table-background {
 	display: block;
@@ -133,13 +159,7 @@ li {
 	margin-left: 50px;
 }
 
-#timer {
-}
-
-.clicked {
-}
-
-.matched{
+.matched {
 	transition: 1s;
 	transform: rotate(360deg);
 }

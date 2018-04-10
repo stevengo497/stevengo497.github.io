@@ -4,15 +4,21 @@ $(function() {
 
 	$('#start').one("click", function(){
 			
-			let i = 100;
+			let i = 1;
 			let timer = setInterval(function(){
 				i--;
 				$('#box').html(i);
 					if (i < 0 ) {
 						clearInterval(timer);
-						alert("Time's up, I mean...Do you even have any Asian friends?")
-					}
+						$('.loseAlert').css("display", "block");
+						}
 			}, 1000);
+
+			$('#losePlayAgain').click(function() {
+	    	$('.loseAlert').css("display", "none");
+	    	location.reload();
+			});
+
 	
 		/* TO DO LIST
 			-reset button?
@@ -51,8 +57,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}	
 		});
 
@@ -82,8 +94,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}	
 		});
 
@@ -115,8 +133,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}		
 		});
 
@@ -146,8 +170,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});
 
@@ -178,8 +208,14 @@ $(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}												
 		});
 
@@ -209,8 +245,14 @@ $(function() {
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});
 
@@ -241,8 +283,14 @@ $(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}												
 		});
 
@@ -272,8 +320,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});			
 
@@ -304,8 +358,14 @@ $(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}											
 		});
 
@@ -335,8 +395,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});
 
@@ -367,8 +433,14 @@ $(function() {
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}	
 		});
 
@@ -398,8 +470,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});			
 
@@ -430,8 +508,14 @@ $(function() {
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});
 
@@ -461,8 +545,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});			
 
@@ -493,8 +583,14 @@ $(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}											
 		});
 
@@ -524,8 +620,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});
 
@@ -556,8 +658,14 @@ $(function() {
 				}	
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}											
 		});
 
@@ -587,8 +695,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});			
 
@@ -619,8 +733,14 @@ $(function() {
 				}		
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}												
 		});
 
@@ -650,8 +770,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});			
 
@@ -682,8 +808,14 @@ $(function() {
 				} 														
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});
 
@@ -713,8 +845,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});			
 
@@ -745,8 +883,14 @@ $(function() {
 				}													
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});
 
@@ -776,8 +920,14 @@ $(function() {
 				}
 
 				if ($('.yinYangRemove').length === 0) {
-					alert('Congrats! You know your Asians!');
+					setTimeout(function() {
+					$('.winAlert').css("display", "block");
 					clearInterval(timer);
+					}, 2100);
+					$('#playAgain').click(function() {
+    				$('.winAlert').css("display", "none");
+    			location.reload();
+    			})
 				}
 		});	
 	});	
