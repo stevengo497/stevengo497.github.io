@@ -88,7 +88,7 @@ a:hover {
 	text-align: center;
 	padding: 20px;
 	z-index: 100;
-	margin-left: 30%;
+	margin-left: 27.5%;
 	margin-right: 30%;
 	z-index: 100;
 	font-size: 36px;
@@ -102,11 +102,12 @@ a:hover {
 	background-color: #C93D22;
 	font-family: 'Shojumaru', cursive;
 	text-align: center;
-	margin-left: 30%;
-	margin-right: 30%;
+	margin-left: 24%;
+	margin-right: 30%;	
 	z-index: 100;
-	font-size: 36px;
-	margin-top: 3%;
+	font-size: 36px;	
+	margin-top: 4.5%;	
+	width: 52.5%;
 }
 
 
